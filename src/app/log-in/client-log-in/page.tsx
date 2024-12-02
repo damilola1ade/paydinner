@@ -26,7 +26,7 @@ const ClientLogin = () => {
           </p>
           <p className="text-gray text-center tracking-tight mt-6">
             Your time is precious. Turn every date into rewarding experience
-            with cash back on your dining...
+            with cash back on your dining.
           </p>
           <div className="mt-4">
             <SignInWithGoogle />
