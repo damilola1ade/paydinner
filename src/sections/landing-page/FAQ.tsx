@@ -90,7 +90,7 @@ export const FAQ = () => {
           </h2>
         </div>
 
-        <div className="h-[20rem] md:h-[20rem] relative b flex flex-col max-w-5xl mx-auto w-full my-10 lg:my-10">
+        <div className="h-[25rem] md:h-[20rem] relative b flex flex-col max-w-5xl mx-auto w-full my-10 lg:my-10">
           <Tabs tabs={tabs} />
         </div>
       </div>
