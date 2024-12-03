@@ -9,7 +9,7 @@ export const GoBackButton = ({ text }: { text: string }) => {
     router.back();
   };
   return (
-    <div className="fixed z-[1000] p-2 w-full bg-white left-0 lg:left-64 top-[56px]">
+    <div className="fixed z-[100] p-2 w-full bg-white left-0 lg:left-64 top-[56px]">
       <p
         className="font-bold flex items-center gap-2 cursor-pointer tracking-tight"
         onClick={goBack}

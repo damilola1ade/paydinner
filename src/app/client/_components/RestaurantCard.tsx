@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import React from "react";
@@ -12,9 +12,9 @@ export const RestaurantCard = () => {
 
   const router = useRouter();
   const handleNavigate = () => {
-    router.push(`/client/dashboard/restaurants/${id}`);
+    router.push(`/client/dashboard/restaurants/id`);
   };
-  
+
   return (
     <div className="lg:w-96 rounded-lg cursor-pointer" onClick={handleNavigate}>
       <div className="relative w-full h-48 rounded-lg overflow-hidden">

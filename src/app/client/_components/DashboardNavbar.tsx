@@ -57,7 +57,7 @@ export default function DashboardNavbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="fixed py-2 px-8 w-full flex justify-between items-center z-40 bg-white border-b border-ash">
+    <div className="fixed py-2 px-2 px:8 w-full flex justify-between items-center z-[1000] bg-white border-b border-ash">
       <div className="lg:hidden">
         {mobileMenuOpen ? (
           <IoCloseSharp
