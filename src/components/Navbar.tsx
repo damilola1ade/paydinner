@@ -24,7 +24,7 @@ export const Navbar = () => {
   const path = usePathname();
 
   return (
-    <header className="bg-white border-black border-b-[1px] sticky top-0 backdrop-blur-[5px] z-40">
+    <header className="bg-black border-white border-b-[1px] sticky top-0 backdrop-blur-[5px] z-40">
       {/* <div className="flex justify-center items-center py-2 bg-black text-white text-sm gap-3">
         <p className="text-white/60 hidden md:block">
           Streamline your workflow and boost your productivity
@@ -50,12 +50,14 @@ export const Navbar = () => {
             {mobileMenuOpen ? (
               <IoCloseSharp
                 size={30}
+                color="white"
                 className="lg:hidden cursor-pointer"
                 onClick={() => setMobileMenuOpen(false)}
               />
             ) : (
               <IoMenu
                 size={30}
+                color="white"
                 className="lg:hidden cursor-pointer"
                 onClick={() => setMobileMenuOpen(true)}
               />
@@ -66,9 +68,9 @@ export const Navbar = () => {
                 <div key={item.href}>
                   <a
                     href={item.href}
-                    // className={`text-[15px] text-black hover:text-gray ${
-                    //   path === item.href && "font-extrabold"
-                    // }`}
+                    className={`text-[15px] text-white hover:text-slate-300 ${
+                      path === item.href && "font-extrabold"
+                    }`}
                   >
                     {item.label}
                   </a>

@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // comment when developing
+  // output: "export", // comment when developing
   images: {
     unoptimized: true  //Comment the output and images when not deploying to Render
     

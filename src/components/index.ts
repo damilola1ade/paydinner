@@ -7,3 +7,4 @@ export * from "./RestaurantCTAButton";
 export * from "./LearnMore";
 export * from "./Divider";
 export * from "./SignInWithGoogle";
+export * from './GoBackButton'

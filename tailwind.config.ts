@@ -15,9 +15,6 @@ const config: Config = {
       lg: "1200px",
     },
     extend: {
-      backgroundImage: {
-        "hero-pattern": "url('/photo.jpg')",
-      },
       container: {
         center: true,
         padding: {
@@ -42,7 +39,7 @@ const config: Config = {
           foreground: "hsl(var(--popover-foreground))",
         },
         primary: {
-          DEFAULT: "#ff5900",
+          DEFAULT: "#d13800",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -53,6 +50,7 @@ const config: Config = {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
         },
+        peach: "#ffe3d4",
         gray: "#444444",
         ash: "#b6b6b6",
         accent: {
