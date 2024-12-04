@@ -6,7 +6,13 @@ import { IoIosStar } from "react-icons/io";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { GoBackButton } from "@/components";
 import { Button } from "@/components/ui/button";
-import { ExclusiveOffer } from "@/app/client/_components";
+import {
+  ExclusiveOffer,
+  Gallery,
+  GuestReviews,
+  OurStory,
+  SpecialMenu,
+} from "@/app/client/_components";
 
 export default function ViewRestaurantById() {
   return (
@@ -79,15 +85,17 @@ export default function ViewRestaurantById() {
             </div>
           </div>
         </div>
-
         {/*Exclusive offer*/}
-        <div className="bg-white mt-8 w-full p-6 rounded-xl">
-          <h1 className="text-primary text-md lg:text-lg font-bold">Exclusive offer</h1>
-          <h3 className="mt-2 font-normal mb-4">
-            Special 3-Course Menu for PayDinner Members!
-          </h3>
-          <ExclusiveOffer />
-        </div>
+        <ExclusiveOffer />
+        {/* Our story */}
+        <OurStory />
+        {/* Special menu */}
+        <SpecialMenu />
+        {/* Guest reviews */}
+        <GuestReviews />
+        {/* Our story */}
+        {/* Gallery */}
+        <Gallery />
       </div>
     </>
   );

@@ -27,7 +27,7 @@ export const RestaurantCard = () => {
         />
       </div>
       <div className="flex justify-between items-center mt-4">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 w-full">
           <div className="flex justify-between items-center">
             <h4 className="font-semibold text-lg">Saffron Oasis</h4>
             <IoMdHeartEmpty className="cursor-pointer" size={24} />
