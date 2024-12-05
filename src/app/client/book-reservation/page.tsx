@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { GoBackButton } from "@/components";
 import { Button } from "@/components/ui/button";
@@ -10,7 +10,7 @@ export default function BookReservation() {
   const router = useRouter();
 
   function handleNavigate() {
-    router.push("/client/dashboard/restaurants");
+    router.push("/client/explore-restaurants");
   }
   return (
     <>
@@ -24,7 +24,9 @@ export default function BookReservation() {
             <Input placeholder="Restaurant name" />
           </div>
           <div className="h-[320px] relative hidden md:block p-12 w-full bg-[url('/map.jpg')] bg-cover bg-no-repeat rounded-xl" />
-          <Button className="mt-4" onClick={handleNavigate}>Proceed</Button>
+          <Button className="mt-4" onClick={handleNavigate}>
+            Proceed
+          </Button>
         </div>
       </div>
     </>

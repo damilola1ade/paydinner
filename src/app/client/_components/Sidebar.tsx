@@ -15,37 +15,37 @@ export default function Sidebar() {
     {
       id: 1,
       name: "Dashboard",
-      path: "/client/dashboard",
+      path: "/client",
       icon: LuLayoutDashboard,
     },
     {
       id: 2,
       name: "Explore restaurants",
-      path: "/dashboard/generate-video",
+      path: "/client/explore-restaurants",
       icon: IoCompassOutline,
     },
     {
       id: 3,
       name: "My reservations",
-      path: "/dashboard/upgrade-account",
+      path: "/client/my-reservations",
       icon: FaTags,
     },
     {
       id: 4,
       name: "My earnings",
-      path: "/dashboard/upgrade-account",
+      path: "/client/my-earnings",
       icon: BsCurrencyDollar,
     },
     {
       id: 5,
       name: "Invite friends",
-      path: "/dashboard/upgrade-account",
+      path: "/client/invite-friends",
       icon: CiShare2,
     },
     {
       id: 6,
       name: "Messages",
-      path: "/dashboard/upgrade-account",
+      path: "/client/messages",
       icon: IoChatboxOutline,
     },
   ];
@@ -55,7 +55,7 @@ export default function Sidebar() {
   const router = useRouter();
 
   function handleLogout() {
-    router.replace('/')
+    router.replace("/");
   }
 
   return (
@@ -82,7 +82,10 @@ export default function Sidebar() {
         ))}
       </div>
 
-      <div className="my-48 pl-4 flex gap-2 items-center text-sm cursor-pointer text-[red]" onClick={handleLogout}>
+      <div
+        className="my-48 pl-4 flex gap-2 items-center text-sm cursor-pointer text-[red]"
+        onClick={handleLogout}
+      >
         <LuLogOut />
         <p>Log out</p>
       </div>

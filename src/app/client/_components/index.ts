@@ -4,4 +4,7 @@ export * from "./ExclusiveOffer";
 export * from "./OurStory";
 export * from "./SpecialMenu";
 export * from "./GuestReviews";
-export * from './Gallery'
+export * from "./Gallery";
+export * from "./BookReservation";
+export * from "./EditReservation";
+export * from './ClaimCashback'

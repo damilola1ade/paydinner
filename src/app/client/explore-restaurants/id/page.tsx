@@ -7,6 +7,7 @@ import { IoMdHeartEmpty } from "react-icons/io";
 import { GoBackButton } from "@/components";
 import { Button } from "@/components/ui/button";
 import {
+  BookReservation,
   ExclusiveOffer,
   Gallery,
   GuestReviews,
@@ -63,7 +64,7 @@ export default function ViewRestaurantById() {
               </div>
             </div>
 
-            <Button className="lg:w-64">Book reservation</Button>
+            <BookReservation />
           </div>
 
           <div className="mt-4 w-full h-[1px] bg-ash" />

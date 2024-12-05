@@ -1,5 +1,5 @@
 import { GoBackButton } from "@/components";
-import { RestaurantCard } from "../../_components";
+import { RestaurantCard } from "../_components";
 
 export default function Restaurants() {
   return (

@@ -1,8 +1,8 @@
 import { BsBookmarkCheck } from "react-icons/bs";
 import { FaLightbulb } from "react-icons/fa";
 import { CiShare2 } from "react-icons/ci";
-import { Overview } from "../_components";
 import Link from "next/link";
+import { Overview } from "./_components";
 
 const items = [
   {
@@ -12,7 +12,7 @@ const items = [
     bgColor: "bg-blue-100",
     borderColor: "border-blue-600",
     icon: <BsBookmarkCheck size={20} color="blue" />,
-    href: "/client/dashboard/book-reservation",
+    href: "/client/book-reservation",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const items = [
     bgColor: "bg-orange-200",
     borderColor: "border-primary",
     icon: <CiShare2 size={20} color="#ff5b07" />,
-    href: "/client/dashboard/book-reservation",
+    href: "/client/book-reservation",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const items = [
     bgColor: "bg-green-100",
     borderColor: "border-green-600",
     icon: <FaLightbulb size={20} color="green" />,
-    href: "/client/dashboard/book-reservation",
+    href: "/client/book-reservation",
   },
 ];
 

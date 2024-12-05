@@ -12,7 +12,7 @@ export const RestaurantCard = () => {
 
   const router = useRouter();
   const handleNavigate = () => {
-    router.push(`/client/dashboard/restaurants/id`);
+    router.push(`/client/explore-restaurants/id`);
   };
 
   return (
