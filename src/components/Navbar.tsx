@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Logo from "@/assets/logo.png";
+import { useState } from "react";
 import Image from "next/image";
 import { IoMenu } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
@@ -12,8 +11,6 @@ import { usePathname } from "next/navigation";
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "How It Works", href: "#how-it-works" },
-  // { label: "For Women", href: "#for-women" },
-  // { label: "For Restaurants", href: "#for-restaurants" },
   { label: "Success Stories", href: "#success-stories" },
   { label: "FAQs", href: "#faqs" },
 ];

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Image from "next/image";
+import Link from "next/link";
 import { BsCurrencyDollar } from "react-icons/bs";
 import { CiShare2 } from "react-icons/ci";
 import { FaTags } from "react-icons/fa";
@@ -14,7 +15,7 @@ import {
 } from "react-icons/io5";
 import { LuLayoutDashboard } from "react-icons/lu";
 
-const siderBarLinks = [
+const mobileNavbarLinks = [
   {
     id: 1,
     name: "Dashboard",
@@ -53,7 +54,7 @@ const siderBarLinks = [
   },
 ];
 
-export default function DashboardNavbar() {
+export const ClientNavbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -85,10 +86,12 @@ export default function DashboardNavbar() {
           PayDinner
         </p>
       </div>
-      <Avatar>
-        <AvatarImage src="/photo.jpg" alt="@shadcn" />
-        <AvatarFallback>CN</AvatarFallback>
-      </Avatar>
+      <Link href="/client/profile">
+        <Avatar>
+          <AvatarImage src="/photo.jpg" alt="@shadcn" />
+          <AvatarFallback>CN</AvatarFallback>
+        </Avatar>
+      </Link>
     </div>
   );
-}
+};

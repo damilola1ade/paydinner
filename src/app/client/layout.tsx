@@ -1,19 +1,18 @@
 import React, { ReactNode } from "react";
-import DashboardNavbar from "./_components/DashboardNavbar";
-import Sidebar from "./_components/Sidebar";
+import { ClientNavbar, ClientSidebar } from "./_components";
 
-export default function DashboardLayout({ children }: { children: ReactNode }) {
+export default function ClientDashboardLayout({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Navbar */}
       {/* <div className="fixed top-0 w-full z-40 border-b border-ash"> */}
-        <DashboardNavbar />
+      <ClientNavbar />
       {/* </div> */}
 
       <div className="flex-1 pt-14">
         {/* Sidebar */}
         <aside className="hidden lg:block fixed h-screen bg-white">
-          <Sidebar />
+          <ClientSidebar />
         </aside>
 
         {/* Main Content */}

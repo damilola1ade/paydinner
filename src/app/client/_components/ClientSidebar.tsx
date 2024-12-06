@@ -10,7 +10,8 @@ import { IoCompassOutline } from "react-icons/io5";
 import { FaTags } from "react-icons/fa";
 import { BsCurrencyDollar } from "react-icons/bs";
 
-export default function Sidebar() {
+export const ClientSidebar = () => {
+  
   const siderBarLinks = [
     {
       id: 1,
@@ -91,4 +92,4 @@ export default function Sidebar() {
       </div>
     </div>
   );
-}
+};

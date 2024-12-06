@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
+import NextTopLoader from "nextjs-toploader";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -18,7 +19,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative">
-      <body className={clsx(dmSans.className, "antialiased tracking-tight")}>{children}</body>
+      <body
+        className={clsx(
+          dmSans.className,
+          "antialiased tracking-tight bg-[#f6f6f6]"
+        )}
+      >
+        <NextTopLoader showSpinner={false} shadow="0" color="#d13800" />
+        {children}
+      </body>
     </html>
   );
 }
