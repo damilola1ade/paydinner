@@ -5,7 +5,7 @@ import { ClientCTAButton } from "@/components";
 
 export const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="pt-8 pb-20 md:pt-20 md:pb-20">
+    <section id="how-it-works" className="bg-white pt-8 pb-20 md:pt-20 md:pb-20">
       <div className="container">
         <div className="flex justify-center">
           <h2 className="section-title">How It Works</h2>
